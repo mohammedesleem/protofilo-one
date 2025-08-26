@@ -1,0 +1,1366 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Lexend Deca',
+        sans-serif;
+}
+
+:root {
+    --header-color: #020617;
+    --sacend-background: #111827;
+    --main-color: white;
+    --secandery-color: #FACC15;
+    --hover-color: blue;
+    --color-nav: #9CA3AF;
+
+}
+
+.contain {
+    width: 80%;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+
+.contain .info .p-info {
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #6B7280;
+
+
+    line-height: 27px;
+    letter-spacing: 0%;
+    margin: 20px 0px;
+}
+
+header {
+    background-color: var(--header-color);
+}
+
+header .contain {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    color: var(--main-color);
+    padding: 10px;
+}
+
+h2 span {
+    color: var(--secandery-color);
+}
+
+
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+header nav ul li {
+    list-style: none;
+
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    color: var(--color-nav);
+}
+
+header nav ul li a:hover {
+    color: var(--main-color)
+}
+
+header nav ul li a:active {
+    color: var(--main-color);
+}
+
+
+.landing {
+    background-color: var(--sacend-background);
+
+}
+
+.landing .contain {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.contain .info {
+    width: 500px;
+    color: var(--main-color);
+
+}
+
+.landing .contain .info :nth-child(1) {
+    color: var(--secandery-color);
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+.landing .contain .info :nth-child(2) {
+    margin: 20px 0px;
+
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 42px;
+
+    line-height: 64px;
+    letter-spacing: 0%;
+}
+
+
+
+button {
+
+    padding: 8px 20px;
+
+    gap: 10px;
+
+    opacity: 1;
+    border-radius: 4px;
+    background-color: var(--secandery-color);
+}
+
+
+
+.landing .image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url(../image/im1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.about {
+    background-color: var(--header-color);
+    margin: 10
+}
+
+.about .contain {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.about .contain .image {
+    width: 400px;
+    position: relative;
+
+
+}
+
+.about .contain .image .div-border {
+    width: 200px;
+    height: 320px;
+    top: 106px;
+    border-radius: 24px;
+    border-width: 16px;
+    border: 8px solid var(--secandery-color);
+
+
+
+    opacity: 1;
+}
+
+
+
+.about .contain .image .img {
+    width: 300px;
+    height: 300px;
+    background-image: url(../image/im2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotatey(180deg);
+    border-radius: 10px;
+    position: absolute;
+    top: -5px;
+    left: 30px;
+
+}
+
+
+
+.p-info {
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #6B7280;
+
+
+    line-height: 27px;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.service {
+    background-color: var(--sacend-background);
+
+}
+
+.service .contain .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service .contain .cards .card {
+    background-color: var(--header-color);
+    color: var(--main-color);
+    text-align: center;
+    padding: 20px;
+
+}
+
+.service .contain .cards .card i {
+    color: var(--secandery-color);
+    font-size: 40px;
+
+}
+
+
+
+.service .contain .cards .card h3 {
+    margin: 20px 0px;
+
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 26px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.service .contain .cards .card h3 span {
+    display: block;
+}
+
+.Portfolio {
+    background-color: var(--header-color);
+}
+
+.Portfolio .contain .info {
+    margin: 0px auto;
+    text-align: center;
+}
+
+.Portfolio .contain .image {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+        "im1 im1 im1  im2 im2 im3 im3"
+        "im1 im1 im1  im4 im4 im5 im5 "
+    ;
+    gap: 30px;
+}
+
+.Portfolio .contain .image .img1 {
+    background-image: url(image/image1.jpg);
+    grid-area: im1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.Portfolio .contain .image .img2 {
+    background-image: url(image/image2.jpg);
+    grid-area: im2;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.Portfolio .contain .image .img3 {
+    background-image: url(image/image3.jpg);
+    grid-area: im3;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.Portfolio .contain .image .img4 {
+    background-image: url(image/image4.jpg);
+    grid-area: im4;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.Portfolio .contain .image .img5 {
+    background-image: url(image/image5.jpg);
+    grid-area: im5;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.Experiences {
+    background-color: var(--sacend-background);
+}
+
+.Experiences .contain .cards {
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.Experiences .contain .cards .card {
+    background-color: var(--header-color);
+    width: 366;
+    height: 303;
+    gap: 8px;
+
+    opacity: 1;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.Experiences .contain .cards .card :nth-child(1) {
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+    line-height: 27px;
+    letter-spacing: 0%;
+    color: var(--color-nav);
+}
+
+.Experiences .contain .cards .card :nth-child(2) {
+
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 26px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+
+    color: var(--secandery-color);
+}
+
+.Experiences .contain .cards .card :nth-child(3) {
+
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 26px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+
+    color: var(--color-nav);
+}
+
+.Contact {
+    background-color: var(--header-color);
+}
+
+
+.Contact .contain .info {
+    text-align: center;
+    margin: 0px auto;
+}
+
+.contac-contain {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contac-contain .details p {
+
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+
+}
+
+.contac-contain .details p span {
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--secandery-color);
+}
+
+.contac-contain form input {
+    background-color: var(--sacend-background);
+    border: 0px solid;
+    padding: 10px;
+    display: block;
+    color: var(--main-color);
+
+}
+
+.contac-contain form textarea {
+    background-color: var(--sacend-background);
+    border: 0px solid;
+    padding: 10px;
+    display: block;
+    width: 400px;
+    height: 200px;
+    margin: 30px 0px;
+    color: var(--main-color);
+}
+
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-webkit-input-placeholder,
+.contac-contain form textarea::-webkit-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-moz-placeholder,
+.contac-contain form textarea::-moz-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input:-ms-input-placeholder,
+.contac-contain form textarea:-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::-ms-input-placeholder,
+.contac-contain form textarea::-ms-input-placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+
+
+
+.contac-contain form input::placeholder,
+.contac-contain form textarea::placeholder {
+
+    font-weight: 400;
+
+    font-size: 16px;
+
+    line-height: 41px;
+    letter-spacing: 0%;
+    color: var(--main-color);
+    font-style: Regular;
+
+}
+
+footer {
+    background-color: var(--header-color);
+    text-align: center;
+    color: var(--main-color);
+}
+
+footer .info {
+    margin: 0px auto;
+}
+
+footer .icon i {
+    color: var(--color-nav);
+}
+
+footer .icon i:hover {
+    color: var(--secandery-color);
+}
